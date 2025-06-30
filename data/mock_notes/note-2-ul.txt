@@ -1,0 +1,13 @@
+unsup = no labels. kmeans = simplest one but still used a lot. init k centroids randomly (k-means++ better), assign pts, recalc centroids, repeat. converge when no pt changes. but result depends on init + scale. scale important! feature w bigger range dominates dist calc — always standardize first.
+elbow method = plot inertia vs k — look for bend, but not always obvious. inertia = sum of dist² to centroid. alt metric = silhouette score — between -1 and 1. close to 1 = well-clustered.
+clustering ≠ classification. labels are not known. use cases: market segmentation, gene expr clustering, anomaly detection (esp dbscan). DBSCAN better for weird shapes, dense clusters — uses eps + min_samples. tricky to tune tho. forms clusters based on density, noisy pts marked as outliers (label -1). sklearn DBSCAN ex: from sklearn.cluster import DBSCAN model = DBSCAN(eps=0.5, min_samples=5) model.fit(X)
+hierarchical clustering = agglomerative or divisive — we focus on bottom-up (agglomerative). start w all pts as indiv cluster, merge closest pairs step by step. dendrogram = tree of merges. can "cut" tree at diff levels = diff num clusters. linkage: single, complete, avg. sklearn has AgglomerativeClustering.
+before clustering, can reduce dim (PCA) for speed + viz. tSNE/UMAP for 2D plot = better for human eye but not for modeling. PCA = linear, tSNE = non-linear. tSNE distorts structure globally. good for pattern discovery.
+spectral clustering = build similarity graph → Laplacian → eigenvectors → k-means in lower-dim eigenspace. nice when structure is graphy, not spherical.
+most clustering algos rely on distance metric — Euclidean default. alt: cosine sim (for text), manhattan, etc.
+eval: hard bcz no true label. silhouette best for most. DB index too. compare within/between cluster distance. can also visualize clusters to judge quality.
+problem: k-means assumes spherical clusters, equal size. not true for real-world. if data has diff density or shapes → fails.
+open Q: how to know if clusters mean anything in real world?
+scaling is essential — StandardScaler or MinMaxScaler from sklearn.
+pipeline ex:
+from sklearn.pipeline import make_pipeline pipe = make_pipeline(StandardScaler(), KMeans(n_clusters=3)) pipe.fit(X)

@@ -1,0 +1,15 @@
+lecture today was fast af. started with trees. entropy vs gini impurity — diff metrics to decide best split. both OK. CART = binary tree = each node has 2 splits. sklearn uses this. code: from sklearn.tree import DecisionTreeClassifier model = DecisionTreeClassifier(criterion='entropy', max_depth=4)
+trees prone to overfit — esp if depth unbounded. pruning = way to fix. early stopping or post-prune. bagging helps = ensemble. RandomForest = multiple trees on bootstrapped samples + rand subset of features per split. reduces variance.
+trees = interpretability good, but unstable to data changes.
+then prof jumped into regression. regularization = shrink model capacity. Ridge = L2 norm = λ * Σ(w²). Lasso = L1 norm = λ * Σ|w|. Ridge keeps all weights ≠ 0, Lasso can zero out → sparse. Lasso good for feature selection. ElasticNet = mix of both — good if features correlated
+code ex:
+from sklearn.linear_model import ElasticNet model = ElasticNet(alpha=0.1, l1_ratio=0.5) model.fit(X, y)
+important: scale features before fitting regularized models — otherwise magnitudes skew the penalty. StandardScaler or RobustScaler if outliers.
+tune α via cross-val — use GridSearchCV or RandomizedSearchCV.
+metrics: RMSE, R². underfit vs overfit — regularization helps balance bias/var tradeoff.
+last part was unsupervised learning. clustering w/o labels. k-means = most used. init centers, assign pts, recalc, repeat. problem: sensitive to init. use k-means++. elbow method not always clear. silhouette score better maybe.
+PCA + k-means often combined for vis. t-SNE only for viz — not for modeling. clusters in t-SNE are sometimes fake.
+DBSCAN = cluster via density. can detect noise. great for shape-agnostic clusters. params hard to tune tho. hierarchical = dendrograms. use ‘ward’ linkage. but slow w/ big data.
+general note: sklearn models consistent API — fit / predict / score.
+also: why trees don’t need scaling? bcz splits based on order not value. contrast w/ reg models.
+each algo has tradeoffs — no free lunch! choose based on data, task, interpretability needs.
