@@ -1,0 +1,186 @@
+{
+  "-1": [
+    {
+      "chunk_id": 3,
+      "chunk": "code: from sklearn.tree import DecisionTreeClassifier model = DecisionTreeClassifier(criterion='entropy', max_depth=4)\ntrees prone to overfit — esp if depth unbounded.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 6,
+      "chunk": "bagging helps = ensemble.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 10,
+      "chunk": "then prof jumped into regression.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 15,
+      "chunk": "ElasticNet = mix of both — good if features correlated\ncode ex:\nfrom sklearn.linear_model import ElasticNet model = ElasticNet(alpha=0.1, l1_ratio=0.5) model.fit(X, y)\nimportant: scale features before fitting regularized models — otherwise magnitudes skew the penalty.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 17,
+      "chunk": "k-means = most used.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 18,
+      "chunk": "init centers, assign pts, recalc, repeat. problem: sensitive to init. use k-means++. elbow method not always clear. silhouette score better maybe. PCA + k-means often combined for vis. t-SNE only for viz — not for modeling. clusters in t-SNE are sometimes fake.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "0": [
+    {
+      "chunk_id": 19,
+      "chunk": "DBSCAN = cluster via density.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 20,
+      "chunk": "can detect noise. great for shape-agnostic clusters. params hard to tune tho.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "1": [
+    {
+      "chunk_id": 2,
+      "chunk": "sklearn uses this.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 16,
+      "chunk": "StandardScaler or RobustScaler if outliers. tune α via cross-val — use GridSearchCV or RandomizedSearchCV. metrics: RMSE, R². underfit vs overfit — regularization helps balance bias/var tradeoff. last part was unsupervised learning. clustering w/o labels.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 22,
+      "chunk": "use ‘ward’ linkage. but slow w/ big data. general note: sklearn models consistent API — fit / predict / score.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "2": [
+    {
+      "chunk_id": 0,
+      "chunk": "lecture today was fast af. started with trees. entropy vs gini impurity — diff metrics to decide best split.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 9,
+      "chunk": "trees = interpretability good, but unstable to data changes.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 21,
+      "chunk": "hierarchical = dendrograms.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 23,
+      "chunk": "also: why trees don’t need scaling? bcz splits based on order not value. contrast w/ reg models. each algo has tradeoffs — no free lunch! choose based on data, task, interpretability needs.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "3": [
+    {
+      "chunk_id": 1,
+      "chunk": "both OK. CART = binary tree = each node has 2 splits.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 7,
+      "chunk": "RandomForest = multiple trees on bootstrapped samples + rand subset of features per split.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "4": [
+    {
+      "chunk_id": 4,
+      "chunk": "pruning = way to fix.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 5,
+      "chunk": "early stopping or post-prune.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "5": [
+    {
+      "chunk_id": 8,
+      "chunk": "reduces variance.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 11,
+      "chunk": "regularization = shrink model capacity.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "6": [
+    {
+      "chunk_id": 12,
+      "chunk": "Ridge = L2 norm = λ * Σ(w²).",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 13,
+      "chunk": "Lasso = L1 norm = λ * Σ|w|.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 14,
+      "chunk": "Ridge keeps all weights ≠ 0, Lasso can zero out → sparse. Lasso good for feature selection.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ]
+}

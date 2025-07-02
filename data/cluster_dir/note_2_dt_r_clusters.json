@@ -1,0 +1,101 @@
+{
+  "-1": [
+    {
+      "chunk_id": 0,
+      "chunk": "entropy = -p * log2(p) – yeah info gain is difference in entropy before and after split — okay so DT picks feature that max info gain at each node.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 1,
+      "chunk": "Gini impurity also similar but faster? less bias? not 100% sure. trees go deep and then prone back? no, prune. to prevent overfitting. training error low but generalization bad. CART uses binary splits – only yes/no right?",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 5,
+      "chunk": "they said bagging can help that — RandomForest.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    }
+  ],
+  "0": [
+    {
+      "chunk_id": 8,
+      "chunk": "λ too big = underfit.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 9,
+      "chunk": "low λ = overfit.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    }
+  ],
+  "1": [
+    {
+      "chunk_id": 2,
+      "chunk": "sklearn.tree.DecisionTreeClassifier(max_depth=3) — yeah that’s what prof used.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 3,
+      "chunk": "note: good to visualize trees but not for high dim data. lots of axis-aligned splits, hard to interpret when too many features.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 4,
+      "chunk": "oh and trees are unstable — small data change = big model change.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 12,
+      "chunk": "btw they said don’t scale trees but do scale for lasso etc. bcz regularization depends on magnitude. std scaling or minmax okay. might try gridsearch to tune alpha — sklearn.model_selection.GridSearchCV\ndecision boundary of tree is step-like, not smooth like linear models. ok Q: why trees overfit more than lasso? more flexible model class I think?",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    }
+  ],
+  "2": [
+    {
+      "chunk_id": 6,
+      "chunk": "wait then they jumped to regularization — lasso vs ridge. ridge adds λ * sum(w²), shrinks weights, but all stay ≠ 0. Lasso adds λ * sum(|w|) — forces some to zero.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 7,
+      "chunk": "ohhh good for feature selection. balance bias-variance tradeoff.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 10,
+      "chunk": "prof wrote this on board: from sklearn.linear_model import Lasso model = Lasso(alpha=0.1) model.fit(X_train, y_train)\nElasticNet = mix of both?",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    },
+    {
+      "chunk_id": 11,
+      "chunk": "ratio param controls mix. good when multicollinearity or many small coeffs. visualize loss function — lasso diamond corners cause zeros. interesting.",
+      "metadata": {
+        "source": "note_2_dt_r.txt"
+      }
+    }
+  ]
+}
