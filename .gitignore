@@ -13,5 +13,6 @@ Thumbs.db
 # === Temp database and logs ===
 /data/chroma_db/
 /data/processed_files.txt
+/data/cluster_dir
 *.log
 *.bin
