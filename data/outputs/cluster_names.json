@@ -1,6 +1,0 @@
-{
-  "cluster_0": "decision_tree",
-  "cluster_1": "kmeans_elasticnet",
-  "cluster_2": "dbscan_hierarchical",
-  "cluster_3": "cart_randomforest_pruning_regularization"
-}

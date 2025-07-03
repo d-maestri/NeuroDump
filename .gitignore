@@ -15,3 +15,5 @@ Thumbs.db
 /data/processed_files.txt
 *.log
 *.bin
+
+extract.py

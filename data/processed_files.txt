@@ -1,3 +1,0 @@
-note_2_dt_r.txt
-note_1_ul.txt
-note_3_dt_r_ul.txt
