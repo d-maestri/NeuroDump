@@ -1,0 +1,22 @@
+Topic: tree-based_models
+==================================================
+
+• lecture today was fast af. started with trees. entropy vs gini impurity — diff metrics to decide best split.
+• both OK. CART = binary tree = each node has 2 splits.
+• bagging helps = ensemble.
+• trees prone to overfit — esp if depth unbounded.
+• then prof jumped into regression.
+• ElasticNet = mix of both — good if features correlated
+code ex:
+from sklearn.linear_model import ElasticNet model = ElasticNet(alpha=0.1, l1_ratio=0.5) model.fit(X, y)
+important: scale features before fitting regularized models — otherwise magnitudes skew the penalty.
+• DBSCAN = cluster via density.
+• can detect noise. great for shape-agnostic clusters. params hard to tune tho.
+• hierarchical = dendrograms.
+• RandomForest = multiple trees on bootstrapped samples + rand subset of features per split.
+• reduces variance.
+• Ridge = L2 norm = Σ(w²).
+• Lasso = L1 norm = Σ|w|.
+• Ridge keeps all weights ≠ 0, Lasso can zero out → sparse. Lasso good for feature selection.
+
+[Total: 14 notes]

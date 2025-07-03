@@ -1,0 +1,12 @@
+Topic: unsupervised_learning
+==================================================
+
+• code: from sklearn.tree import DecisionTreeClassifier model = DecisionTreeClassifier(criterion='entropy', max_depth=4)
+trees prone to overfit — esp if depth unbounded.
+• DBSCAN = cluster via density.
+• can detect noise. great for shape-agnostic clusters. params hard to tune tho.
+• sklearn uses this.
+• StandardScaler or RobustScaler if outliers. tune α via cross-val — use GridSearchCV or RandomizedSearchCV. metrics: RMSE, R². underfit vs overfit — regularization helps balance bias/var tradeoff. last part was unsupervised learning. clustering w/o labels.
+• use ‘ward’ linkage. but slow w/ big data. general note: sklearn models consistent API — fit / predict / score.
+
+[Total: 6 notes]

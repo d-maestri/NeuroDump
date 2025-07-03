@@ -1,0 +1,17 @@
+Topic: decision_trees
+==================================================
+
+• entropy = -p * log2(p) – yeah info gain is difference in entropy before and after split — okay so DT picks feature that max info gain at each node.
+• Gini impurity also similar but faster? less bias? not 100% sure. trees go deep and then prone back? no, prune. to prevent overfitting. training error low but generalization bad. CART uses binary splits – only yes/no right?
+• they said bagging can help that — RandomForest.
+• λ too big = underfit.
+• low λ = overfit.
+• btw they said don’t scale trees but do scale for lasso etc. bcz regularization depends on magnitude. std scaling or minmax okay. might try gridsearch to tune alpha — sklearn.model_selection.GridSearchCV
+decision boundary of tree is step-like, not smooth like linear models. ok Q: why trees overfit more than lasso? more flexible model class I think?
+• wait then they jumped to regularization — lasso vs ridge. ridge adds λ * sum(w²), shrinks weights, but all stay ≠ 0. Lasso adds λ * sum(|w|) — forces some to zero.
+• ohhh good for feature selection. balance bias-variance tradeoff.
+• prof wrote this on board: from sklearn.linear_model import Lasso model = Lasso(alpha=0.1) model.fit(X_train, y_train)
+ElasticNet = mix of both?
+• ratio param controls mix. good when multicollinearity or many small coeffs. visualize loss function — lasso diamond corners cause zeros. interesting.
+
+[Total: 10 notes]

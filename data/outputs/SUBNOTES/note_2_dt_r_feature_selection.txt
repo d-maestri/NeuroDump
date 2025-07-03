@@ -1,0 +1,9 @@
+Topic: feature_selection
+==================================================
+
+• Gini impurity also similar but faster? less bias? not 100% sure.
+• low λ = overfit.
+• prof wrote this on board: from sklearn.linear_model import Lasso model = Lasso(alpha=0.1) model.fit(X_train, y_train)
+• ratio param controls mix. good when multicollinearity or many small coeffs.
+
+[Total: 4 notes]

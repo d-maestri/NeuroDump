@@ -1,0 +1,8 @@
+Topic: regularization
+==================================================
+
+• sklearn.tree.DecisionTreeClassifier(max_depth=3) — yeah that’s what prof used.
+• note: good to visualize trees but not for high dim data. lots of axis-aligned splits, hard to interpret when too many features.
+• oh and trees are unstable — small data change = big model change.
+
+[Total: 3 notes]

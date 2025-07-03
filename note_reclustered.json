@@ -1,0 +1,36 @@
+{
+  "cluster_0": [
+    {
+      "chunk_id": 0,
+      "chunk": "lecture today was fast af. started with trees. entropy vs gini impurity — diff metrics to decide best split.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 1,
+      "chunk": "both OK. CART = binary tree = each node has 2 splits.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "cluster_1": [
+    {
+      "chunk_id": 15,
+      "chunk": "ElasticNet = mix of both — good if features correlated",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ],
+  "cluster_2": [
+    {
+      "chunk_id": 19,
+      "chunk": "DBSCAN = cluster via density.",
+      "metadata": {
+        "source": "note_3_dt_r_ul.txt"
+      }
+    }
+  ]
+}

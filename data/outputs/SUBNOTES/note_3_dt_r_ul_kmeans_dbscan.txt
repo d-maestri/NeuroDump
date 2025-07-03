@@ -1,0 +1,7 @@
+Topic: kmeans_dbscan
+==================================================
+
+• k-means = most used.
+• init centers, assign pts, recalc, repeat. problem: sensitive to init. use k-means++. elbow method not always clear. silhouette score better maybe. PCA + k-means often combined for vis. t-SNE only for viz — not for modeling. clusters in t-SNE are sometimes fake.
+
+[Total: 2 notes]
