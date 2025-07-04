@@ -1,0 +1,11 @@
+Topic: hierarchical_clustering
+==================================================
+
+• unsup = no labels.
+• elbow method = plot inertia vs k — look for bend, but not always obvious.
+• start w all pts as indiv cluster, merge closest pairs step by step.
+• init k centroids randomly (k-means++ better), assign pts, recalc centroids, repeat. converge when no pt changes. but result depends on init + scale. scale important! feature w bigger range dominates dist calc — always standardize first.
+• inertia = sum of dist² to centroid.
+• spectral clustering = build similarity graph → Laplacian → eigenvectors → k-means in lower-dim eigenspace.
+
+[Total: 6 notes]

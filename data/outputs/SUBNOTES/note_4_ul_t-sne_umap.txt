@@ -1,0 +1,8 @@
+Topic: t-sne_umap
+==================================================
+
+• tSNE/UMAP for 2D plot = better for human eye but not for modeling.
+• PCA = linear, tSNE = non-linear.
+• tSNE distorts structure globally. good for pattern discovery.
+
+[Total: 3 notes]

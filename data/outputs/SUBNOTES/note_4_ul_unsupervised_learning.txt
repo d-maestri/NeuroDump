@@ -1,0 +1,12 @@
+Topic: unsupervised_learning
+==================================================
+
+• kmeans = simplest one but still used a lot.
+• alt metric = silhouette score — between -1 and 1. close to 1 = well-clustered.
+• clustering ≠ classification. labels are not known. use cases: market segmentation, gene expr clustering, anomaly detection (esp dbscan). DBSCAN better for weird shapes, dense clusters — uses eps + min_samples. tricky to tune tho. forms clusters based on density, noisy pts marked as outliers (label -1).
+• sklearn DBSCAN ex: from sklearn.cluster import DBSCAN model = DBSCAN(eps=0.5, min_samples=5) model.fit(X)
+• open Q: how to know if clusters mean anything in real world? scaling is essential — StandardScaler or MinMaxScaler from sklearn.
+• pipeline ex:
+from sklearn.pipeline import make_pipeline pipe = make_pipeline(StandardScaler(), KMeans(n_clusters=3)) pipe.fit(X)
+
+[Total: 6 notes]

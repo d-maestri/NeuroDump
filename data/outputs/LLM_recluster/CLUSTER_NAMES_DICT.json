@@ -1,5 +1,7 @@
 {
-  "cluster_0": "kmeans",
+  "cluster_0": "unsupervised_learning",
   "cluster_1": "hierarchical_clustering",
-  "cluster_2": "tsne_umap"
+  "cluster_2": "t-sne_umap",
+  "cluster_3": "clustering_fundamentals",
+  "cluster_4": "spectral_clustering"
 }

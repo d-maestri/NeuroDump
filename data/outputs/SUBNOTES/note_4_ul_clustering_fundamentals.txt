@@ -1,0 +1,11 @@
+Topic: clustering_fundamentals
+==================================================
+
+• dendrogram = tree of merges.
+• can "cut" tree at diff levels = diff num clusters.
+• if data has diff density or shapes → fails.
+• linkage: single, complete, avg. sklearn has AgglomerativeClustering.
+• clustering algos rely on distance metric — Euclidean default. alt: cosine sim (for text), manhattan, etc. eval: hard bcz no true label. silhouette best for most. DB index too. compare within/between cluster distance.
+• problem: result depends on init + scale. always standardize first.
+
+[Total: 6 notes]

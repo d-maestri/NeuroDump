@@ -1,0 +1,322 @@
+{
+  "0": [
+    {
+      "chunk_id": 3,
+      "chunk": "elbow method = plot inertia vs k — look for bend, but not always obvious.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 23,
+      "chunk": "elbow method = plot inertia vs k — look for bend, but not always obvious.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "1": [
+    {
+      "chunk_id": 13,
+      "chunk": "PCA = linear, tSNE = non-linear.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 33,
+      "chunk": "PCA = linear, tSNE = non-linear.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "2": [
+    {
+      "chunk_id": 0,
+      "chunk": "unsup = no labels.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 20,
+      "chunk": "unsup = no labels.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "3": [
+    {
+      "chunk_id": 14,
+      "chunk": "tSNE distorts structure globally. good for pattern discovery.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 34,
+      "chunk": "tSNE distorts structure globally. good for pattern discovery.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "4": [
+    {
+      "chunk_id": 12,
+      "chunk": "tSNE/UMAP for 2D plot = better for human eye but not for modeling.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 32,
+      "chunk": "tSNE/UMAP for 2D plot = better for human eye but not for modeling.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "5": [
+    {
+      "chunk_id": 17,
+      "chunk": "if data has diff density or shapes → fails.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 37,
+      "chunk": "if data has diff density or shapes → fails.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "6": [
+    {
+      "chunk_id": 5,
+      "chunk": "alt metric = silhouette score — between -1 and 1. close to 1 = well-clustered.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 25,
+      "chunk": "alt metric = silhouette score — between -1 and 1. close to 1 = well-clustered.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "7": [
+    {
+      "chunk_id": 4,
+      "chunk": "inertia = sum of dist² to centroid.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 24,
+      "chunk": "inertia = sum of dist² to centroid.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "8": [
+    {
+      "chunk_id": 9,
+      "chunk": "dendrogram = tree of merges.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 29,
+      "chunk": "dendrogram = tree of merges.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "9": [
+    {
+      "chunk_id": 10,
+      "chunk": "can \"cut\" tree at diff levels = diff num clusters.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 30,
+      "chunk": "can \"cut\" tree at diff levels = diff num clusters.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "10": [
+    {
+      "chunk_id": 19,
+      "chunk": "pipeline ex:\nfrom sklearn.pipeline import make_pipeline pipe = make_pipeline(StandardScaler(), KMeans(n_clusters=3)) pipe.fit(X)",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 39,
+      "chunk": "pipeline ex:\nfrom sklearn.pipeline import make_pipeline pipe = make_pipeline(StandardScaler(), KMeans(n_clusters=3)) pipe.fit(X)",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "11": [
+    {
+      "chunk_id": 2,
+      "chunk": "init k centroids randomly (k-means++ better), assign pts, recalc centroids, repeat. converge when no pt changes. but result depends on init + scale. scale important! feature w bigger range dominates dist calc — always standardize first.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 22,
+      "chunk": "init k centroids randomly (k-means++ better), assign pts, recalc centroids, repeat. converge when no pt changes. but result depends on init + scale. scale important! feature w bigger range dominates dist calc — always standardize first.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "12": [
+    {
+      "chunk_id": 8,
+      "chunk": "start w all pts as indiv cluster, merge closest pairs step by step.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 28,
+      "chunk": "start w all pts as indiv cluster, merge closest pairs step by step.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "13": [
+    {
+      "chunk_id": 11,
+      "chunk": "linkage: single, complete, avg. sklearn has AgglomerativeClustering. before clustering, can reduce dim (PCA) for speed + viz.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 31,
+      "chunk": "linkage: single, complete, avg. sklearn has AgglomerativeClustering. before clustering, can reduce dim (PCA) for speed + viz.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "14": [
+    {
+      "chunk_id": 1,
+      "chunk": "kmeans = simplest one but still used a lot.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 21,
+      "chunk": "kmeans = simplest one but still used a lot.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "15": [
+    {
+      "chunk_id": 6,
+      "chunk": "clustering ≠ classification. labels are not known. use cases: market segmentation, gene expr clustering, anomaly detection (esp dbscan). DBSCAN better for weird shapes, dense clusters — uses eps + min_samples. tricky to tune tho. forms clusters based on density, noisy pts marked as outliers (label -1).",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 26,
+      "chunk": "clustering ≠ classification. labels are not known. use cases: market segmentation, gene expr clustering, anomaly detection (esp dbscan). DBSCAN better for weird shapes, dense clusters — uses eps + min_samples. tricky to tune tho. forms clusters based on density, noisy pts marked as outliers (label -1).",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "16": [
+    {
+      "chunk_id": 7,
+      "chunk": "sklearn DBSCAN ex: from sklearn.cluster import DBSCAN model = DBSCAN(eps=0.5, min_samples=5) model.fit(X)\nhierarchical clustering = agglomerative or divisive — we focus on bottom-up (agglomerative).",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 27,
+      "chunk": "sklearn DBSCAN ex: from sklearn.cluster import DBSCAN model = DBSCAN(eps=0.5, min_samples=5) model.fit(X)\nhierarchical clustering = agglomerative or divisive — we focus on bottom-up (agglomerative).",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "17": [
+    {
+      "chunk_id": 18,
+      "chunk": "open Q: how to know if clusters mean anything in real world? scaling is essential — StandardScaler or MinMaxScaler from sklearn.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 38,
+      "chunk": "open Q: how to know if clusters mean anything in real world? scaling is essential — StandardScaler or MinMaxScaler from sklearn.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "18": [
+    {
+      "chunk_id": 16,
+      "chunk": "nice when structure is graphy, not spherical. most clustering algos rely on distance metric — Euclidean default. alt: cosine sim (for text), manhattan, etc. eval: hard bcz no true label. silhouette best for most. DB index too. compare within/between cluster distance. can also visualize clusters to judge quality. problem: k-means assumes spherical clusters, equal size. not true for real-world.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 36,
+      "chunk": "nice when structure is graphy, not spherical. most clustering algos rely on distance metric — Euclidean default. alt: cosine sim (for text), manhattan, etc. eval: hard bcz no true label. silhouette best for most. DB index too. compare within/between cluster distance. can also visualize clusters to judge quality. problem: k-means assumes spherical clusters, equal size. not true for real-world.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ],
+  "19": [
+    {
+      "chunk_id": 15,
+      "chunk": "spectral clustering = build similarity graph → Laplacian → eigenvectors → k-means in lower-dim eigenspace.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    },
+    {
+      "chunk_id": 35,
+      "chunk": "spectral clustering = build similarity graph → Laplacian → eigenvectors → k-means in lower-dim eigenspace.",
+      "metadata": {
+        "source": "note_4_ul.txt"
+      }
+    }
+  ]
+}
