@@ -1,5 +1,5 @@
 {
-  "cluster_0": "decision_trees",
-  "cluster_1": "regularization",
-  "cluster_2": "feature_selection"
+  "cluster_0": "kmeans",
+  "cluster_1": "hierarchical_clustering",
+  "cluster_2": "tsne_umap"
 }

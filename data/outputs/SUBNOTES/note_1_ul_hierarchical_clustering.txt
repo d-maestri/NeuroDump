@@ -1,0 +1,14 @@
+Topic: hierarchical_clustering
+==================================================
+
+• dendrogram = tree of merges.
+• can "cut" tree at diff levels = diff num clusters.
+• if data has diff density or shapes → fails.
+• linkage: single, complete, avg. sklearn has AgglomerativeClustering. before clustering, can reduce dim (PCA) for speed + viz.
+• spectral clustering = build similarity graph → Laplacian → eigenvectors → k-means in lower-dim eigenspace.
+• nice when structure is graphy, not spherical. most clustering algos rely on distance metric — Euclidean default. alt: cosine sim (for text), manhattan, etc. eval: hard bcz no true label. silhouette best for most. DB index too. compare within/between cluster distance. can also visualize clusters to judge quality. problem: k-means assumes spherical clusters, equal size. not true for real-world.
+• open Q: how to know if clusters mean anything in real world? scaling is essential — StandardScaler or MinMaxScaler from sklearn.
+• pipeline ex:
+from sklearn.pipeline import make_pipeline pipe = make_pipeline(StandardScaler(), KMeans(n_clusters=3)) pipe.fit(X)
+
+[Total: 8 notes]
